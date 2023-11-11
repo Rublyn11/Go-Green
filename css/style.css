@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300;1,400;1,500;1,600;1,700&family=Prompt&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+:root{
+    --text-color: #000;
+    --bg-color: #fff;
+    --transition: .4s ease;
+    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --bg2-color: rgb(5, 155, 5);
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    height: 4rem;
+    width: 15rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav_button button{
+    padding: 1rem 5rem;
+    background: transparent;
+    border: 2px solid rgb(3, 182, 3);
+    color: rgb(3, 182, 3);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* End of header section */
+
+.hero_column{
+    margin-top: 6rem;
+}
+
+.hero_row{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.hero_row .hero_text{
+    max-width: 40%;
+}
+
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 6rem;
+    padding: 15px;
+}
+
+.hero_text h1{
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+.hero_text p{
+    width: 90%;
+}
+
+.hero_images{
+    display: flex;
+    gap: 1rem;
+}
+
+.image_row{
+    height: 26rem;
+    width: 13rem;
+    background: red;
+    border-radius: 7rem;
+}
+
+.first,
+.third{
+    margin-top: 4.5rem;
+}
+
+.first{
+    background: url(../images/Green_walk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second{
+    background: url(../images/Blue\ Smoke.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third{
+    background: url(../images/panda\ real.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* End of hero section */
+
+.action_row{
+    display: flex;
+    align-items: last baseline;
+    gap: 9rem;
+    margin-bottom: 3rem;
+}
+
+.action_img img{
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+}
+
+.action_btn button{
+    width: 700px;
+    padding: .9rem .2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background: var(--bg2-color);
+    color: var(--bg-color);
+    outline: none;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.action_column{
+    margin-bottom: 7rem;
+}
+
+/* End of action button section */
+
+.vision_text h1{
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.vision_column{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.card_main{
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 23rem;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: .8rem;
+}
+
+.card_img{
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+}
+
+.card_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.vision_card_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+/* End of Vision section */
+
+.web_line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--bg2-color);
+}
+
+.line{
+    height: 4px;
+    width: 95%;
+    background: var(--bg2-color);
+}
+
+/* End of the web_line section */
+
+.commitment_column{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.commitment_text h1{
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.commitment_grid{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.commitment_grid .commitment_txt{
+    width: 50%;
+}
+
+.commitment_grid .commitment_txt p{
+    text-align: start;
+    width: 80%;
+}
+
+.commitment_img{
+    height: 450px;
+    width: 550px;
+    overflow: hidden;
+}
+
+.commitment_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.8rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* End of the commitment section */
+
+.footer{
+    background: var(--bg2-color);
+    margin-top: 5rem;
+}
+
+.footer_column{
+    display: flex;
+    padding: 2rem 1rem;
+    justify-content: space-between;
+}
+
+.footer_main h2{
+    color: var(--bg-color);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.footer_main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer_main ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer_main ul li a{
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer_main p{
+    color: var(--bg-color);
+}
+
+.footer-input input,
+.footer-input button{
+    padding: .3rem ;
+}
+
+.footer-input input{
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.footer-input button{
+    background: var(--bg-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+/* End of the footer section */
+
+.last{
+    background: var(--bg2-color);
+    border-top: 1px solid var(--bg-color);
+}
+
+.copy{
+    padding: .2rem;
+}
+
+.footer_copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_copy small{
+    color: var(--bg-color);
+}
+
+/* End of copy write section of this website */
+
+/* Lets get started with the media query */
+
+@media screen and (max-width: 400px) {
+
+    .container{
+        width: 95%;
+    }
+
+    .logo{
+        height: 3rem;
+        width: 10rem;
+        overflow: hidden;
+    }
+
+    .logo img{
+        padding: .2rem;
+    }
+
+    .nav_button button{
+        padding: .5rem 2rem;
+        font-size: .8rem;
+    }
+
+    .hero_column{
+        margin-top: 1rem;
+    }
+
+    .hero_row{
+        flex-direction: column;
+    }
+
+    .hero_row .hero_text{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero_text h1{
+        font-size: 70px;
+        overflow: hidden;
+    }
+
+    .hero_text p{
+        width: 100%;
+    }
+
+    .hero_row .hero_images{
+        width: 100%;
+    }
+
+    .hero_images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image_row{
+        height: 20rem;
+        width: 80%;
+        border-radius: 2rem;
+    }
+
+    .first,
+    .third{
+        margin-top: 0;
+    }
+
+    .action_row{
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 0;
+    }
+
+    .action_img {
+        display: none;
+    }
+
+    .action_btn button{
+        width: 200px;
+    }
+
+    .vision_card_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card_img{
+        overflow: hidden;
+    }
+
+    .circle{
+        height: 15px;
+        width: 15px;
+    }
+
+    .line{
+        height: 2.5px;
+    }
+
+    .commitment_grid{
+        flex-direction: column;
+    }
+
+    .commitment_grid .commitment_txt{
+        width: 100%;
+    }
+
+    .commitment_grid .commitment_txt p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .commitment_img{
+        height: 250px;
+        width: 300px;
+        border-radius: 1.8rem;
+        overflow: hidden;
+    }
+
+    .footer_column{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer_main{
+        align-items: center;
+        gap: .3rem;
+    }
+
+    .footer_main p{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .footer_main ul{
+        align-items: center;
+    }
+
+    .footer_main ul li a{
+        font-size: 12px;
+    }
+}
