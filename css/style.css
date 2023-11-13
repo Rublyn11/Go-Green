@@ -31,7 +31,7 @@ nav{
     padding: 10px 0;
 }
 
-.logo{
+/* .logo{
     height: 4rem;
     width: 15rem;
     cursor: pointer;
@@ -42,16 +42,17 @@ nav{
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
+} */
 
 .nav_button button{
     padding: 1rem 5rem;
     background: transparent;
-    border: 2px solid rgb(3, 182, 3);
+    border: 1px solid rgb(3, 182, 3);
     color: rgb(3, 182, 3);
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     cursor: pointer;
+    border-radius: .8rem;
 }
 
 /* End of header section */
@@ -276,6 +277,313 @@ nav{
 
 /* End of the commitment section */
 
+/* Involved section */
+
+.involved_column{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.involved_text{
+    padding: 0 2rem;
+}
+
+.involved_text h1{
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.involved_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+    padding: 1rem 2rem;
+}
+
+.involved_main{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.involved_main .titled{
+    color: var(--bg2-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.involved_main p{
+    color: #4e4e4e;
+    font-size: 16px;
+}
+
+/* End of the involved section styling */
+
+.stake_column{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 3rem;
+}
+
+.stake_text h1{
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.stake_text{
+    padding: 0 2rem;
+}
+
+.stake_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.stake_card_main{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.stake_card_img{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.stake_card_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* End of the stakeholder section styling */
+
+.planet_row{
+    position: relative;
+}
+
+.planet_col{
+    height: 520px;
+    background: url(../images/Soil.jpeg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.big_text{
+    padding: 0 3rem;
+}
+
+.big_text h1{
+    font-size: 45px;
+    color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.small_text{
+    position: absolute;
+    right: 130px;
+    top: 400px;
+    text-align: center;
+}
+
+.small_text h3,
+.small_text small{
+    color: var(--bg-color);
+    font-weight: 400;
+}
+
+/* End of the planet section styling */
+
+.global_col{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.global_text h1{
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.global_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.global_image {
+    width: 389px;
+    height: 375px;
+    overflow: hidden;
+}
+
+.global_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .8rem;
+}
+
+.global_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+/* End of the global section styling */
+
+/* Wrapped styling from donation css file */
+
+.movement_col{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.movement_text h1{
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+.main_form_row{
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.row_one{
+    width: 50%;
+    border-right: 4px solid #eee;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+.row_image{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.row_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.row_one .row_text p{
+    max-width: 25rem;
+}
+
+.row_two{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.name input{
+    width: 400px;
+    padding: .8rem .3rem;
+    outline: none;
+    background: #eee;
+    border: 2px solid #eee;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.email input{
+    width: 400px;
+    padding: .8rem .3rem;
+    outline: none;
+    background: #eee;
+    border: 2px solid #eee;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.country input{
+    width: 400px;
+    padding: .8rem .3rem;
+    outline: none;
+    background: #eee;
+    border: 2px solid #eee;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.select select{
+    width: 400px;
+    padding: .8rem .3rem;
+    outline: none;
+    background: #eee;
+    border: 2px solid #eee;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.thanks{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.thanks h3{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.thanks .flex_check{
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.donation_btn button{
+    width: 400px;
+    padding: .7rem .3rem;
+    background: var(--bg2-color);
+    color: var(--bg-color);
+    outline: none;
+    border: none;
+    border-radius: .2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* End of wrapped styling */
+/* End of the movement section styling */
+
+
+
 .footer{
     background: var(--bg2-color);
     margin-top: 5rem;
@@ -325,6 +633,8 @@ nav{
     border: none;
     color: var(--text-color);
     font-size: 12px;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
 }
 
 .footer-input button{
@@ -333,6 +643,8 @@ nav{
     border: none;
     cursor: pointer;
     box-shadow: var(--box-shadow);
+    padding: .5rem 1rem;
+    border-radius: .3rem;
 }
 
 /* End of the footer section */
@@ -360,26 +672,28 @@ nav{
 
 /* Lets get started with the media query */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
     .container{
         width: 95%;
     }
 
-    .logo{
+    /* .logo{
         height: 3rem;
         width: 10rem;
         overflow: hidden;
-    }
+    } */
 
-    .logo img{
+    /* .logo img{
         padding: .2rem;
-    }
+    } */
 
     .nav_button button{
         padding: .5rem 2rem;
         font-size: .8rem;
     }
+
+    /* End of the navbar mobile responsiveness */
 
     .hero_column{
         margin-top: 1rem;
@@ -424,6 +738,8 @@ nav{
         margin-top: 0;
     }
 
+    /* End of the hero mobile responsiveness */
+
     .action_row{
         align-items: center;
         justify-content: center;
@@ -439,13 +755,18 @@ nav{
         width: 200px;
     }
 
+    /* End of the action mobile responsiveness */
+
     .vision_card_container{
         grid-template-columns: repeat(1, 1fr);
+        place-items: center;
     }
 
     .card_img{
         overflow: hidden;
     }
+
+    /* End of vision mobile responsiveness */
 
     .circle{
         height: 15px;
@@ -476,6 +797,48 @@ nav{
         overflow: hidden;
     }
 
+    /* End of commitment mobile rsponsiveness */
+
+    .involved_main{
+        gap: .3rem;
+    }
+
+    .involved_main .titled{
+        font-size: 16px;
+    }
+
+    .involved_grid{
+        gap: .8rem 2rem;
+    }
+
+    /* End of involved mobile responsiveness */
+
+    .stake_grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .stake_card_main{
+        gap: 1rem;
+    }
+
+    /* End of stake mobile responsiveness */
+
+    .big_text h1{
+        font-size: 38px;
+    }
+
+    .small_text{
+        right: 50px;
+    }
+
+    /* End of planet advice mobile responsiveness */
+
+    .global_grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.8rem;
+    }
+
     .footer_column{
         flex-direction: column;
         gap: 1rem;
@@ -498,4 +861,59 @@ nav{
     .footer_main ul li a{
         font-size: 12px;
     }
+
+    /* Wrapped media query for the volunteer section */
+    .main_form_row{
+        flex-direction: column;
+    }
+
+    .row_one{
+        width: 100%;
+        border-bottom: 4px solid #eee;
+        border-right: none;
+    }
+
+    .row_image{
+        overflow: hidden;
+    }
+
+    .row_one .row_text p{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .row_txt{
+        grid-gap: 1rem 1rem;
+    }
+
+    .row_txt h2{
+        font-size: 18px;
+    }
+
+    .name input{
+        width: 100%;
+        padding: .6rem .2rem;
+    }
+
+    .email input{
+        width: 100%;
+        padding: .6rem .2rem;
+    }
+
+    .country input{
+        width: 100%;
+        padding: .6rem .2rem;
+    }
+
+    .select select{
+        width: 100%;
+        padding: .6rem .2rem;
+    }
+
+    .row_two{
+        width: 80%;
+        margin: auto;
+    }
+
+    /* End of wrapper media query */
 }

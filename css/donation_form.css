@@ -165,7 +165,7 @@ section{
 
 /* Media query for this section */
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .main_form_row{
         flex-direction: column;
     }
